@@ -11,7 +11,7 @@
     
     
     <title>search | JOJO&#39;s Hexo</title>
-    <link href="http://yoursite.com" rel="prefetch" />
+    <link href="http://103.45.177.195:4000" rel="prefetch" />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
 <link rel="stylesheet" href="/css/aos.css">
@@ -58,6 +58,25 @@
 </section>
     <!-- 欧尼酱功能, 谁用谁知道 -->
     
+    <div class="gal-menu gal-dropdown">
+    <div class="circle" id="gal">
+        <div class="ring">
+            <a href="http://103.45.177.195:4000" class="menuItem" style="left: 50%; top: 15%;">首页</a>
+            
+            <a class="menuItem" style="left: 80.3109%; top: 32.5%;">下一页</a>
+            
+            <a href="/archives" class="menuItem" style="left: 80.3109%; top: 67.5%;">归档</a>
+            <a href="/about" class="menuItem" style="left: 50%; top: 85%;">关于</a>
+            <a href="/message" class="menuItem" style="left: 19.6891%; top: 67.5%;">留言板</a>
+
+            
+            <a class="menuItem" style="left: 19.6891%; top: 32.5%;">上一页</a>
+            
+        </div>
+        <audio id="audio" src="/imgs/oni.mp3"></audio>
+    </div>
+</div>
+    
     <header class="navbar navbar-inverse" id="gal-header">
     <div class="container">
         <div class="navbar-header">
@@ -66,7 +85,7 @@
                     aria-expanded="false">
                 <span class="fa fa-lg fa-reorder"></span>
             </button>
-            <a href="http://yoursite.com">
+            <a href="http://103.45.177.195:4000">
                 
                 <style>
                     #gal-header .navbar-brand {
@@ -97,7 +116,7 @@
                 
                 <li class="">
                     <a href="/archives">
-                        <i class="fa fa-archive"></i>归档
+                        <i class="fa fa-archive"></i>X 档案
                     </a>
                 </li>
                 
@@ -106,7 +125,7 @@
                 
                 <li class="">
                     <a href="/categories">
-                        <i class="fa fa-list"></i>分类
+                        <i class="fa fa-list"></i>类别
                     </a>
                 </li>
                 
@@ -116,7 +135,7 @@
                 
                 <li class="">
                     <a href="/tags">
-                        <i class="fa fa-tags"></i>标签
+                        <i class="fa fa-tags"></i>个人标签
                     </a>
                 </li>
                 
@@ -194,7 +213,7 @@
       	var [month, day] = article.date.split('-')
         ''
         ''
-        var defaultPreview = '/imgs/preview/preview2.jpg'
+        var defaultPreview = '/imgs/preview/preview3.jpg'
         var preview = article.preview ? article.preview : defaultPreview
         var path = '/' + article.path
         resultList.append(`<div class="article well clearfix article-body article-excerpt" data-aos="flip-up">
@@ -404,7 +423,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/11/11/hello-world/">Hexo 简介</a>
+                    <a href="/2019/11/12/Markdown-md/">Markdown 学习笔录一</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/11/12/hello/">Hexo 简介</a>
                 </span>
             </li>
             
@@ -426,7 +451,13 @@
             
             <li class="list-group-item">
                 <span class="post-title">
-                    <a href="/2019/11/11/hello-world/">Hexo 简介</a>
+                    <a href="/2019/11/12/Markdown-md/">Markdown 学习笔录一</a>
+                </span>
+            </li>
+            
+            <li class="list-group-item">
+                <span class="post-title">
+                    <a href="/2019/11/12/hello/">Hexo 简介</a>
                 </span>
             </li>
             
@@ -473,7 +504,7 @@
     </li>
     
     <li>
-        <a href="https://www.baidu.com.com/" target="_blank">萌导航</a>
+        <a href="https://yangbingdong.com/2017/build-blog-hexo-advanced/" target="_blank">hexo萌新学习</a>
     </li>
     
 </div>
@@ -491,6 +522,10 @@
     
     <li>
         <a href="https://www.zhihu.com/people/aonosora/activities" target="_blank">知乎</a>
+    </li>
+    
+    <li>
+        <a href="https://segmentfault.com/a/1190000009544924" target="_blank">hexo主题配置</a>
     </li>
     
 </div>
@@ -513,6 +548,17 @@
 <div id="gal-gotop">
     <i class="fa fa-angle-up"></i>
 </div>
+
+
+    <!--鼠标点击爆炸效果-->
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+    <script type="text/javascript" src="/js/src/fireworks.js"></script>
+
+    <!--动态标题效果-->
+    <script type="text/javascript" src="/js/src/dytitle.js"></script> 
+
+
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 <script src="/js/activate-power-mode.js"></script>
 <script>
@@ -563,6 +609,8 @@
 </script>
 <script src="/js/hs.js"></script>
 <script src="/js/blog.js"></script>
+
+<script src="/js/oni.js"></script>
 
 
 
